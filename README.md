@@ -9,4 +9,6 @@ Determining the rheological properties of fluids containing fibers is vital to m
 
 # Method
 ## Obtaining data
-We use numerical simulations to generate the high-fidelity dataset. The Immersed Boundary Method is used to solved the coupled fluid dynamics-solid mehanics equations. For single-fidelity NN and GP surrogates, we focus only on the high-fidelity data as the source for training and testing the surrogates.
+We use numerical simulations to generate the high-fidelity dataset. The Immersed Boundary Method is used to solved the coupled fluid dynamics-solid mehanics equations. For single-fidelity NN and GP surrogates, we focus only on the high-fidelity data as the source for training and testing the surrogates. As shown in below figure for the single-fidelity NN, we have four inputs and the output is the viscosity
+
+https://github.com/mboodagh/Multif-fidelity_rheology_modeling/files/9896807/DNN.pdf
