@@ -9,7 +9,7 @@ Determining the rheological properties of fluids containing fibers is vital to m
 
 # Method
 ## Obtaining data
-We use numerical simulations to generate the high-fidelity dataset. The Immersed Boundary Method is used to solved the coupled fluid dynamics-solid mehanics equations. For single-fidelity NN and GP surrogates, we focus only on the high-fidelity data as the source for training and testing the surrogates. As shown in below figure for the single-fidelity NN, we have four inputs and the output, which is the viscosity.
+We use numerical simulations to generate the high-fidelity dataset. The Immersed Boundary Method is used to solved the coupled fluid dynamics-solid mehanics equations. For single-fidelity NN and GP surrogates, we focus only on the high-fidelity data as the source for training and testing the surrogates. As shown in below figure for the single-fidelity NN, we have four inputs and one output, which is the viscosity.
 
 ![DNN](https://user-images.githubusercontent.com/60017299/198901572-f232c2e1-1d34-4b64-b1f3-e0ce09619e7b.jpg)
 
@@ -24,3 +24,11 @@ of fidelity, where all the lower levels must be sequentially tuned to
 match the highest fidelity. In the present work, we focus only on two
 levels of fidelity. One of the most widely used models to relate the lowfidelity predictions $y_LF$ to the high-fidelity predictions $y_HF$ is the linear
 correlation as follows:
+
+\begin{equation}
+ y_{HF}= \rho_c(\mathbf{x})y_{LF}+\delta_c(\mathbf{x}), 
+ \label{linear}
+\end{equation}
+where $\delta_c(\mathbf{x})$ and $\rho_c(\mathbf{x})$ are the additive and multiplicative correlation surrogates, respectively, and $\rho_c$ is set to a constant value in most models \cite{fernandez2016review}. 
+Linear correlations, even with non-constant parameters, cannot capture the correlation between the low and high-fidelity data in specific problems. As a result, to capture the non-linearities, a generalized autoregressive scheme has been introduced as follows \cite{meng2020composite}:
+
