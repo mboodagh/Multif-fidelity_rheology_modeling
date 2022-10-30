@@ -29,5 +29,9 @@ correlation as follows:
 
 
 where $\delta_c(\mathbf{x})$ and $\rho_c(\mathbf{x})$ are the additive and multiplicative correlation surrogates, respectively, and $\rho_c$ is set to a constant value in most models \cite{fernandez2016review}. 
-Linear correlations, even with non-constant parameters, cannot capture the correlation between the low and high-fidelity data in specific problems. As a result, to capture the non-linearities, a generalized autoregressive scheme has been introduced as follows \cite{meng2020composite}:
+Linear correlations, even with non-constant parameters, cannot capture the correlation between the low and high-fidelity data in specific problems. As a result, to capture the non-linearities, a generalized autoregressive scheme has been introduced as follows:
+
+![image](https://user-images.githubusercontent.com/60017299/198902365-b7c44ae7-b6cf-4341-abb8-880411658e54.png)
+
+
 
