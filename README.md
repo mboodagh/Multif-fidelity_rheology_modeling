@@ -25,10 +25,8 @@ match the highest fidelity. In the present work, we focus only on two
 levels of fidelity. One of the most widely used models to relate the lowfidelity predictions $y_LF$ to the high-fidelity predictions $y_HF$ is the linear
 correlation as follows:
 
-$
- y_{HF}= \rho_c(\mathbf{x})y_{LF}+\delta_c(\mathbf{x}), 
- \label{linear}
-$
+![image](https://user-images.githubusercontent.com/60017299/198902232-d8008e07-c851-46e6-9a20-9eb4daa96b06.png)
+
 where $\delta_c(\mathbf{x})$ and $\rho_c(\mathbf{x})$ are the additive and multiplicative correlation surrogates, respectively, and $\rho_c$ is set to a constant value in most models \cite{fernandez2016review}. 
 Linear correlations, even with non-constant parameters, cannot capture the correlation between the low and high-fidelity data in specific problems. As a result, to capture the non-linearities, a generalized autoregressive scheme has been introduced as follows \cite{meng2020composite}:
 
