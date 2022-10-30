@@ -2,6 +2,7 @@
 # General description
 In this work, the goal is to determine the rheological properties of suspension of fibers using multi-fidelity machine learning models, i.e., Neural networks and Gaussian process. The notebook file **"Multifidelity_rheology_fiber_suspensions"** provides a detailed description of how the high-fidelity rheological data can be combined with low-fidelity data in multi-fidelity surrogates to make rheological precitions of the suspension of fibers. 
 Here, we will demonstrate how the apperent viscosity as a function of starin rate can be determined for the suspension of fibers with different concetrations. The machine learning anlysis in conducted in Python using PyTorch and PyMC. For further information, please visit our publication at https://aip.scitation.org/doi/full/10.1063/5.0087449.
+The all the data used in this study are provided in the data.zip file. 
 
 # Motivation
 
