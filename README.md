@@ -9,6 +9,18 @@ Determining the rheological properties of fluids containing fibers is vital to m
 
 # Method
 ## Obtaining data
-We use numerical simulations to generate the high-fidelity dataset. The Immersed Boundary Method is used to solved the coupled fluid dynamics-solid mehanics equations. For single-fidelity NN and GP surrogates, we focus only on the high-fidelity data as the source for training and testing the surrogates. As shown in below figure for the single-fidelity NN, we have four inputs and the output is the viscosity
+We use numerical simulations to generate the high-fidelity dataset. The Immersed Boundary Method is used to solved the coupled fluid dynamics-solid mehanics equations. For single-fidelity NN and GP surrogates, we focus only on the high-fidelity data as the source for training and testing the surrogates. As shown in below figure for the single-fidelity NN, we have four inputs and the output, which is the viscosity.
 
 ![DNN](https://user-images.githubusercontent.com/60017299/198901572-f232c2e1-1d34-4b64-b1f3-e0ce09619e7b.jpg)
+
+As we mentioned, the high-fidelity data points that describe the behavior of a
+three-dimensional (3D) system with large degrees of freedom are typically expensive. The numerical simulation of the suspension of fibers
+in the current study is no exception as the 3D simulations with a sufficient level of mesh-independency are time-consuming. The cornerstone idea behind MFNNs is to include more data and possibly more
+physics in the form of lower-fidelity data in training the network. The
+challenging part is how to map the data points from lower fidelity
+models to the ones from higher fidelity models to rectify the response
+of the low-fidelity model. It is possible to have data with multiple levels
+of fidelity, where all the lower levels must be sequentially tuned to
+match the highest fidelity. In the present work, we focus only on two
+levels of fidelity. One of the most widely used models to relate the lowfidelity predictions $y_LF$ to the high-fidelity predictions $y_HF$ is the linear
+correlation as follows:
