@@ -13,6 +13,7 @@ We use numerical simulations to generate the high-fidelity dataset. The Immersed
 
 ![DNN](https://user-images.githubusercontent.com/60017299/198901572-f232c2e1-1d34-4b64-b1f3-e0ce09619e7b.jpg)
 
+## Multi-fidelity modeling
 As we mentioned, the high-fidelity data points that describe the behavior of a
 three-dimensional (3D) system with large degrees of freedom are typically expensive. The numerical simulation of the suspension of fibers
 in the current study is no exception as the 3D simulations with a sufficient level of mesh-independency are time-consuming. The cornerstone idea behind MFNNs is to include more data and possibly more
@@ -43,5 +44,11 @@ The schematic representation of multi-fidelity neuran networks (MFNN) is shown i
 
 ![MFNN_page-0001](https://user-images.githubusercontent.com/60017299/198902801-ceed0978-ada4-4241-80fa-df6b8fbdb191.jpg)
 
-
+# Results and discussions
 In order to compare DNN and GP predictions for different training data sizes, we vary $M_t$ between 53 and 93 for both DNN and GP. The $R^2$ and MSE values vary significantly for different hyperparameters. Consequently, in order to make a comparison, we pick the optimized value, i.e., the highest $R^2$ values generally corresponding to minimum NRMSE values for both the GP and DNN. As shown in the below table, the $R^2$ values for the single-fidelity models varies in the range $0.71-0.94$. However, it doesn't exceed $0.8$ when the data size is smaller than $70$. To increase the accuracy beyond $0.9$, one would need to add more data points like in the case of $M_t=93$. However, further increase of the high-fidelity dataset is very expensive. Additionally, even if it is possible to add to the training dataset, such as the case $M_t=93$, as we will show, the range of predictions remains limited to the range of the training datasets. 
+
+![image](https://user-images.githubusercontent.com/60017299/198903575-ad77b02a-8bb4-4387-8127-fb4ecfb893db.png)
+
+
+
+
