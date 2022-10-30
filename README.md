@@ -25,8 +25,7 @@ match the highest fidelity. In the present work, we focus only on two
 levels of fidelity. One of the most widely used models to relate the lowfidelity predictions $y_LF$ to the high-fidelity predictions $y_HF$ is the linear
 correlation as follows:
 
-![image](https://user-images.githubusercontent.com/60017299/198902308-25443a71-c1f5-4bb8-abb0-79be6117f618.png)
-
+![image](https://user-images.githubusercontent.com/60017299/198902332-09186dcc-2938-4565-9187-c7b2a132eccf.png)
 
 
 where $\delta_c(\mathbf{x})$ and $\rho_c(\mathbf{x})$ are the additive and multiplicative correlation surrogates, respectively, and $\rho_c$ is set to a constant value in most models \cite{fernandez2016review}. 
