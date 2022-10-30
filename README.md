@@ -34,7 +34,7 @@ Linear correlations, even with non-constant parameters, cannot capture the corre
 ![image](https://user-images.githubusercontent.com/60017299/198902456-8c82d4a4-1ce4-4ce1-8bb0-70f9a0b4b030.png)
 
 where $F$ is an unknown function and is determined iteratively. 
-Furthermore, the effect of $F$ and $\delta_c$ can be expressed as a combination of a linear $\mathcal{F}_l$ and non-linear $\mathcal{F}_{nl}$ correlations as follows:
+Furthermore, the effect of $F$ and $\delta_c$ can be expressed as a combination of a linear $\mathbf{F}_l$ and non-linear $\mathbf{F}_{nl}$ correlations as follows:
 
 ![image](https://user-images.githubusercontent.com/60017299/198902429-22092646-ce31-4431-b016-cca7f9925d7f.png)
 
