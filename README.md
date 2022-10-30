@@ -39,5 +39,8 @@ Furthermore, the effect of $F$ and $\delta_c$ can be expressed as a combination 
 ![image](https://user-images.githubusercontent.com/60017299/198902429-22092646-ce31-4431-b016-cca7f9925d7f.png)
 
 
+The schematic representation of multi-fidelity neuran networks (MFNN) is shown in the below figure.
+
+![MFNN_page-0001](https://user-images.githubusercontent.com/60017299/198902801-ceed0978-ada4-4241-80fa-df6b8fbdb191.jpg)
 
 
